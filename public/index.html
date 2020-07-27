@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine schöne Webseite</title>
+</head>
+<body>
+    <script>
+        setTimeout(() => {
+            switch(location.search) {
+                case "?lang=de": {
+                    document.title = "Meine schöne Webseite";
+                    document.querySelector("h1").innerText = "Meine schöne Webseite";
+                    break;
+                }
+                case "?lang=en": {
+                    document.title = "My beautiful website";
+                    document.querySelector("h1").innerText = "My beautiful website";
+                    break;
+                }
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
